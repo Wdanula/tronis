@@ -1,0 +1,1721 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* Start of section-1 */
+.container-1 {
+  padding: 1rem;
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: rgb(240, 179, 48);
+  background-color: rgb(14, 23, 49);
+}
+.text {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 0.6rem;
+}
+.icons {
+  text-align: right;
+}
+.icon1 {
+  padding: 1rem 1rem;
+}
+.icon2 {
+  padding: 1rem 1rem;
+}
+/* End Of Section-1 */
+.container-2 {
+  padding: 1rem;
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: rgb(240, 179, 48);
+  background-color: rgb(14, 23, 49);
+}
+.name {
+  font-size: 1.5rem;
+}
+.menu {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: flex-end;
+  /* align-items: center; */
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+/* Animation Of Menu */
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateY(-45px);
+  }
+
+  24% {
+    opacity: 0.5;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.menu-items-1 {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.menuAll {
+  display: none;
+}
+.menuIcons {
+  display: none;
+}
+@media screen and (max-width: 824px) {
+  .menu-items-1 {
+    /* width: 50px; */
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 779px) {
+  .name {
+    font-size: 0.8rem;
+  }
+  .menuIcons {
+    display: block;
+    /* padding: 0 5px; */
+  }
+  .micons {
+    padding: 0 5px;
+    font-size: 0.5rem;
+  }
+  .menu-items-1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 662px) {
+  .menuIcons {
+    display: none;
+  }
+  .menuAll {
+    display: block;
+  }
+}
+/* @media screen and (max-width:375px) {
+    .menuIcons{
+        display: none;
+    }
+    .menuAll{
+        display: block;
+    }
+    
+} */
+@media screen and (max-width: 226px) {
+  .icons {
+    display: none;
+  }
+  .container-1 {
+    display: none;
+  }
+  .container-2 {
+    padding-top: 10px;
+  }
+  .name {
+    font-size: 0.7rem;
+  }
+  .text {
+    font-size: 0.3rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  .menuIcons {
+    display: flex;
+  }
+  .micons {
+    font-size: 0.7rem;
+  }
+  .menuAll {
+    display: none;
+  }
+}
+@media screen and (min-width: 380px) {
+  .micons {
+    font-size: 1rem;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 779px) {
+  .micons {
+    display: none;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+}
+/* Start Of Section-2 */
+.micons:hover .home {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+}
+.home {
+  font-size: 0.5rem;
+  /* display: none; */
+}
+.micons:hover .shop {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+}
+.shop {
+  font-size: 0.5rem;
+  /* display: none; */
+}
+.micons:hover .account {
+  position: relative;
+  cursor: pointer;
+  /* display: block; */
+  /* left: -6px; */
+  z-index: 1;
+}
+.account {
+  font-size: 0.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 0;
+  /* display: none; */
+}
+.micons:hover.login1 {
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+}
+i {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.login1 {
+  font-size: 0.5rem;
+  /* display: none; */
+  /* color: rgb(240, 179, 48); */
+}
+.micons:hover .search {
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+}
+.search {
+  font-size: 0.5rem;
+  /* display: none; */
+}
+/* End of container2 */
+
+/* Start Of Container 3 */
+.container-3 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 1rem;
+  background-color: rgb(14, 23, 49);
+}
+.container-3 input[type="text"] {
+  background-color: rgb(14, 23, 49);
+  border: 1px solid rgb(240, 179, 48);
+  border-radius: 5px;
+  color: rgb(240, 179, 48);
+}
+/* Animation for search box of container-3 */
+.container-3 .inputsearch {
+  /* animation: display2 3s 1 forwards; */
+}
+@keyframes display2 {
+  /* 0% {transform: rotateY(90deg);}
+  25%  {transform: rotateY(180deg);}
+  75%  {transform: rotateY(270deg)}
+  100% {transform: rotateY(360deg);} */
+  from {
+    transform: translate(1300px);
+  }
+  to {
+    transform: translate(0px);
+  }
+}
+
+.categories {
+  text-align: center;
+  background-color: rgb(14, 23, 49);
+  padding-bottom: 1rem;
+}
+
+/* Animation for hedding of categories */
+
+@keyframes display3 {
+  from {
+    transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.hedding-shop {
+  padding: 10px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* animation: display3 2s 1 forwards; */
+}
+.sub-categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* animation: display1 3s 1  forwards; */
+  animation: slit-in-horizontal 1s ease 0s 1 normal none;
+}
+.scale-down {
+  animation: scale-down-center 1s ease 0s 1 normal forwards;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+@keyframes scale-down-center {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.card p {
+  color: rgb(15, 12, 26);
+}
+.card h4 {
+  color: rgb(14, 23, 49);
+}
+.card span {
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  padding: 0.5rem 1.5rem;
+}
+.card span:hover {
+  color: rgb(240, 179, 48);
+  cursor: pointer;
+  box-shadow: 0px 0px 30px 30px rgba(99, 92, 79, 0.233);
+}
+.things {
+  padding: 0.3rem;
+}
+.btn {
+  background-color: rgb(14, 23, 49);
+  border-radius: 0.5rem;
+}
+
+#link.test-a {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+  /* animation: display1 3s 1  forwards; */
+  animation: flip-out-horizontal 1s ease 0s 1 normal none;
+}
+@keyframes flip-out-horizontal {
+  0% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(70deg);
+    opacity: 0;
+  }
+}
+.card span:active {
+  padding: 0.4rem 1.4rem;
+  font-size: 0.88rem;
+}
+.card {
+  width: 300px;
+  background-color: rgb(240, 179, 48);
+  padding: 0.2rem;
+  height: 300px;
+  padding-top: 2rem;
+  border-radius: 5px;
+}
+/* Start Animation For Cards */
+@keyframes display1 {
+  /* 0% {transform: rotateY(90deg);}
+  25%  {transform: rotateY(180deg);}
+  75%  {transform: rotateY(270deg)}
+  100% {transform: rotateY(360deg);} */
+  from {
+    transform: translate(-1300px);
+  }
+  to {
+    transform: translate(0px);
+  }
+}
+@keyframes slit-in-horizontal {
+  0% {
+    transform: translateZ(-800px) rotateX(90deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translateZ(-160px) rotateX(87deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateZ(0) rotateX(0);
+  }
+}
+/* End Animation For Cards */
+.development-boards {
+  /* background-image:
+    linear-gradient(to bottom, rgba(154, 155, 165, 0.753), rgba(241, 213, 120, 0.73)),
+    url('./developmentboards.jpg'); */
+  /* background-image: url(./developmentboards.jpg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(240, 179, 48);
+}
+.thingsDevelopmentBoards {
+  width: 50px;
+  height: 50px;
+  background-image: url(./microbit-DarkBlue.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.development-boards:hover {
+  box-shadow: 0px 0px 30px 30px rgba(99, 92, 79, 0.233);
+}
+.electronic-comp {
+  /* background-image:
+    linear-gradient(to bottom, rgba(154, 155, 165, 0.767), rgba(241, 213, 120, 0.73)),
+    url('./electronicComponents.jpg'); */
+  /* background-image: url(./developmentboards.jpg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(240, 179, 48);
+}
+.thingsElectronics {
+  width: 50px;
+  height: 50px;
+  background-image: url(./electroniccomponents-blue.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.discription-electronics {
+  font-size: 0.75rem;
+  padding: 0.5rem 0.5rem;
+}
+.electronic-comp:hover {
+  box-shadow: 0px 0px 30px 30px rgba(99, 92, 79, 0.233);
+}
+.printer {
+  /* background-image:
+    linear-gradient(to bottom, rgba(154, 155, 165, 0.726), rgba(241, 213, 120, 0.73)),
+    url('./cnc.jpg'); */
+  /* background-image: url(./3dPrinter-DarkBlue.png); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(240, 179, 48);
+}
+.thingsPrinter {
+  background-image: url(./3dPrinter-DarkBlue.png);
+  background-position: center;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+.discription {
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+}
+.printer:hover {
+  box-shadow: 0px 0px 30px 30px rgba(99, 92, 79, 0.233);
+}
+.inputsearch {
+  width: 50vw;
+  border: none;
+  background-color: rgba(30, 168, 202, 0.247);
+  outline: none;
+}
+.inputsearch[type="text"] {
+  color: rgb(240, 179, 48);
+  border-bottom: rgb(240, 179, 48);
+  padding: 5px;
+  text-align: center;
+}
+
+/* Start Of Container 4 */
+hr {
+  border-color: rgb(44, 51, 71);
+}
+.container-4 {
+  background-color: rgb(14, 23, 49);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.contacts p {
+  padding-bottom: 0.5rem;
+}
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.address > h4 {
+  color: rgb(240, 179, 48);
+  padding-bottom: 1rem;
+}
+.address {
+  color: white;
+}
+.address p {
+  font-size: 0.8rem;
+}
+.bankCards h3 {
+  text-align: center;
+}
+.fas {
+  font-size: 0.9rem;
+}
+
+/* Media Query For Container-3 */
+@media screen and (max-width: 964px) {
+  .card {
+    transform: scale(0.9);
+  }
+}
+@media screen and (max-width: 884px) {
+  .card {
+    transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 870px) {
+  .card {
+    transform: scale(0.8);
+  }
+  .card .discription-electronics {
+    font-size: 0.73rem;
+  }
+  .card {
+    padding-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 776px) {
+  .card {
+    transform: scale(0.8);
+  }
+  .card .discription-electronics {
+    font-size: 0.73rem;
+  }
+  .card {
+    padding-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 710px) {
+  .card {
+    transform: scale(0.8);
+  }
+  .card .discription-electronics {
+    font-size: 0.73rem;
+  }
+  .card {
+    padding-bottom: 3rem;
+  }
+  .card {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .card {
+    font-size: 0.7rem;
+    padding-bottom: 3.5rem;
+  }
+  .discription {
+    font-size: 0.75rem;
+  }
+  .printer .discription {
+    font-size: 0.79rem;
+  }
+  .development-boards .discription {
+    font-size: 0.79rem;
+  }
+}
+@media screen and (max-width: 645px) {
+  .sub-categories {
+    display: inline-block;
+    margin: auto;
+  }
+  .card {
+    width: 400px;
+    font-size: 2rem;
+  }
+  .card .discription {
+    font-size: 1rem;
+  }
+  .card .discription-electronics {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 409px) {
+  .card {
+    width: 300px;
+    font-size: 0.8rem;
+  }
+  .card .discription-electronics {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 574px) {
+  .sub-categories {
+    display: inline-block;
+  }
+}
+
+/* Media Qurey For Container 4 */
+@media screen and (max-width: 943px) {
+  .address {
+    transform: scale(0.9);
+  }
+}
+@media screen and (max-width: 915px) {
+  .address {
+    transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 919px) {
+  .contacts {
+    transform: scale(1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+  .bankCards {
+    grid-column: 1/3;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contacts {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 305px) {
+  .address {
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 511px) {
+  .copy > p {
+    transform: scale(0.8);
+    font-size: 0.6rem;
+  }
+}
+/* End Of Media Query */
+
+/* Start Of Container 5 */
+.container-5 {
+  text-align: center;
+  background-color: rgb(14, 23, 49);
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 0.8rem;
+  word-spacing: 1px;
+  letter-spacing: 2px;
+  padding: 1rem;
+}
+
+/* Style Of User Form */
+.container-user {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(14, 23, 49);
+  /* display: flex;
+    justify-content: center; */
+}
+.form {
+  width: 800px;
+  margin: 0 auto;
+  /* margin-left: 10px; */
+}
+.form p {
+  padding-bottom: 2rem;
+}
+.registration {
+  text-align: center;
+  color: rgb(240, 179, 48);
+  padding-bottom: 1rem;
+}
+fieldset {
+  border: rgb(240, 179, 48) 1px solid;
+  padding: 40px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+input {
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  background-color: rgb(15, 16, 19);
+  border: none;
+  border-bottom: 1px solid rgb(240, 179, 48);
+  color: rgb(240, 179, 48);
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+input[type="submit"] {
+  background-color: rgb(15, 16, 19);
+  border: solid 1px rgb(240, 179, 48);
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: rgb(240, 179, 48);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+/* Media Queary Of Register Page */
+@media screen and (max-width: 840px) {
+  .details {
+    display: block;
+  }
+  .form {
+    transform: scale(0.8);
+    width: 500px;
+    padding-top: 3rem;
+  }
+  .container-user {
+    margin-top: -80px;
+    margin-bottom: -100px;
+  }
+}
+@media screen and (max-width: 518px) {
+  .form {
+    transform: scale(0.8);
+    width: 350px;
+  }
+  .container-user {
+    margin-top: -80px;
+  }
+}
+@media screen and (max-width: 379px) {
+  .form {
+    transform: scale(0.8);
+    width: 300px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 293px) {
+  .form {
+    width: 300px;
+  }
+  .container-1 .container-2 .container-3 .container-4 .container-5 {
+    transform: scale(0.8);
+  }
+}
+
+/* Style for login form */
+
+.login {
+  background-color: rgb(14, 23, 49);
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.detailsLogin {
+  display: block;
+}
+.loginTitle {
+  text-align: center;
+  color: rgb(240, 179, 48);
+  padding-bottom: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.error p {
+  color: rgb(240, 179, 48);
+}
+.form input {
+  background-color: rgb(14, 23, 49);
+}
+.form {
+  animation: shutter-in-top 1s ease 0s 1 normal none;
+}
+@keyframes shutter-in-top {
+  0% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+
+/* Style Of My Profile */
+.menu-items-1 > a {
+  text-decoration: none;
+  color: rgb(240, 179, 48);
+  text-decoration-line: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* End of style sheet of My profile */
+
+/* Start Of Admin Panel Style */
+.container-admin {
+  background-color: rgb(14, 23, 49);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-bottom: 10px;
+}
+.container-admin > h2 {
+  text-align: center;
+  color: rgb(240, 179, 48);
+}
+.admin-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+.dashboard {
+  background-color: rgb(240, 179, 48);
+  padding: 2rem 2rem;
+  gap: 1rem;
+  margin: 30px;
+  border-radius: 5px;
+}
+.dashboard p {
+  padding-bottom: 10px;
+}
+.adminlist {
+  grid-column: 1/3;
+}
+.adminlist a {
+  text-decoration: none;
+  color: rgb(240, 179, 48);
+}
+.userlist a {
+  text-decoration: none;
+  color: rgb(240, 179, 48);
+}
+.dashboard button {
+  background-color: rgb(14, 23, 49);
+  color: rgb(240, 179, 48);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  outline: none;
+}
+.dashboard button:hover {
+  box-shadow: 0px 0px 10px 10px rgb(14, 23, 49, 0.123);
+}
+.dashboard button:active {
+  transform: scale(0.96);
+}
+.productlist a {
+  text-decoration: none;
+  color: rgb(240, 179, 48);
+}
+.dashboard h4 {
+  padding-bottom: 1.5rem;
+}
+.dashboard i {
+  font-size: 3rem;
+  color: rgb(14, 23, 49);
+  margin-top: -2rem;
+}
+/*End Of Admin Panel Style */
+
+/* Start Of Media Query For Admin Panel */
+@media screen and (max-width: 608px) {
+  .admin-cards {
+    display: block;
+  }
+}
+@media screen and (max-width: 304px) {
+  .admin-cards {
+    font-size: 0.9rem;
+  }
+  .container-admin > h2 {
+    font-size: 1.5rem;
+  }
+}
+/* End Of Media Query For Admin Panel */
+
+/* Start Of customer list style */
+.table-section {
+  background-color: rgb(15, 16, 19);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.customer-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: left;
+  color: white;
+  padding: 3rem;
+}
+.customer-list h2 {
+  padding-bottom: 2rem;
+  color: rgb(240, 179, 48);
+  text-align: center;
+}
+table {
+  margin: 30px;
+  border-collapse: collapse;
+}
+table th {
+  background-color: rgb(240, 179, 48);
+  color: rgb(15, 16, 19);
+  padding: 10px 20px;
+  text-align: center;
+}
+table td {
+  padding: 15px 20px;
+  text-align: center;
+}
+table tr:nth-child(even) {
+  background-color: rgb(44, 51, 71);
+}
+table a {
+  padding: 5px 10px;
+  background-color: rgb(240, 179, 48);
+  text-decoration: none;
+  color: rgb(15, 16, 19);
+  border-radius: 5px;
+}
+/* Media query for table */
+@media screen and (max-width: 843px) {
+  .customer-list {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+  table tr {
+    text-align: center;
+    padding: 5px;
+  }
+  table a {
+    padding: 5px 10px;
+    background-color: rgb(240, 179, 48);
+    text-decoration: none;
+    color: rgb(15, 16, 19);
+    border-radius: 5px;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 670px) {
+  .customer-list {
+    padding: 0.5rem;
+    font-size: 0.6rem;
+  }
+  table a {
+    padding: 3px 5px;
+    font-size: 0.6rem;
+  }
+}
+/* @media screen and (max-width:563px) {
+    .customer-list{
+        padding: 0.5rem;
+        font-size: 0.6rem;
+    }
+    table a{
+        padding: 1px 3px;
+        font-size: 0.3rem;
+    }
+    table td {
+        padding: 1px;
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width:398px) {
+    .customer-list{
+        padding: 0.5rem;
+        font-size: 0.6rem;
+    }
+    table a{
+        transform: scale(0.6);
+    }
+    table td {
+        transform: scale(0.6);
+    }
+} */
+
+/* Style for user registration */
+body {
+  overflow-x: hidden;
+}
+.errors {
+  margin: 20px 0;
+  font-size: 0.8rem;
+  background-color: rgb(32, 40, 63);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Style Of Shopping Section */
+.hedding {
+  background-color: rgb(14, 23, 49);
+  padding: 40px;
+}
+.section-shop {
+  background-color: rgb(14, 23, 49);
+  text-align: center;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 1rem 2rem;
+  background-color: rgb(14, 23, 49);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.grid {
+  background-color: rgb(240, 179, 48);
+  color: rgb(14, 23, 49);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+.product-image > img {
+  /* width: 100px;
+  height: 100px; */
+  /* background-color: rgb(14, 23, 49); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+.product-discription {
+  padding: 1rem;
+  text-align: center;
+  overflow-y: scroll;
+  width: 250px;
+  height: 100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.product-discription p {
+  padding: 0px 10px;
+}
+.price {
+  margin-bottom: 10px;
+  /* margin-top: -5px; */
+}
+#delete {
+  padding: 5px 10px;
+  width: 100px;
+  margin: auto;
+}
+.price-tag {
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgb(14, 23, 49);
+}
+span {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.show-details {
+  text-align: center;
+  background-color: rgb(14, 23, 49);
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 1px;
+}
+.show-details span {
+  padding: 10px;
+}
+.show-details a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.show-details:active {
+  padding: 0.4rem;
+  font-size: 0.9rem;
+}
+
+/* Start Of Tab Selection  */
+#home {
+  background-color: rgb(240, 179, 48);
+  color: rgb(14, 23, 49);
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px 30px rgba(236, 190, 104, 0.123);
+}
+#shop {
+  background-color: rgb(240, 179, 48);
+  color: rgb(14, 23, 49);
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px 30px rgba(236, 190, 104, 0.123);
+}
+#userregister {
+  background-color: rgb(240, 179, 48);
+  color: rgb(14, 23, 49);
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px 30px rgba(236, 190, 104, 0.123);
+}
+#login {
+  background-color: rgb(240, 179, 48);
+  color: rgb(14, 23, 49);
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px 30px rgba(236, 190, 104, 0.123);
+}
+.hicon {
+  background-color: rgb(240, 179, 48);
+  color: rgb(14, 23, 49);
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px 30px rgba(236, 190, 104, 0.123);
+}
+
+/* Style for add product page */
+.add-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.bottom-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.display-image img {
+  width: 150px;
+  height: 150px;
+  /* background-color: rgb(240, 179, 48); */
+  /* background-image: url(./images/IMG61d46c89815706.35074299.jpg); */
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 5px;
+}
+.right-side {
+  margin: auto;
+  text-align: center;
+}
+@media screen and (max-width: 629px) {
+  .add-product {
+    display: block;
+  }
+}
+
+/* Style of add new product form */
+select {
+  background-color: rgb(32, 40, 63);
+  color: rgb(240, 179, 48);
+  padding: 10px;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+}
+textarea {
+  background-color: rgb(32, 40, 63);
+  border: none;
+  outline: none;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  color: rgb(240, 179, 48);
+  font-size: 18px;
+}
+
+/* Style of btn-controls */
+.btn-controls {
+  display: grid;
+  grid-template-columns: 0.25fr 0.25fr 0.25fr;
+  gap: 5px;
+}
+.btn-controls input {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+#add-btn:hover {
+  box-shadow: 0px 0px 10px 10px rgba(236, 190, 104, 0.123);
+  cursor: pointer;
+}
+#add-btn:active {
+  background-color: rgb(44, 51, 71);
+}
+.image-input::-webkit-file-upload-button {
+  visibility: visible;
+}
+/* .image-input::before {
+     box-shadow: 0px 0px 30px 30px rgba(236, 190, 104, 0.123);
+     content: 'Select image';
+     cursor: pointer;
+     border: 1px solid rgb(240, 179, 48);
+     padding: 4px 5px;
+     border-radius: 5px;
+     font-size: 0.8rem;
+     position: relative;
+     left: 50px;
+  } */
+
+#img-btn {
+  padding: 10px 10px;
+}
+/* .image-input::before{
+    content: 'Select Image';
+    background-color: rgb(240, 179, 48);
+    color: rgb(15, 16, 19);
+    text-align: center;
+} */
+
+.image-display-console {
+  display: block;
+  margin: auto;
+}
+.sec-1 {
+  float: right;
+}
+
+/* Media query for add product */
+
+@media screen and (max-width: 496px) {
+  #add-product-form {
+    position: relative;
+    right: 20px;
+  }
+  .btn-controls {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 379px) {
+  #add-product-form {
+    position: relative;
+    right: 40px;
+  }
+}
+
+/* More details */
+body {
+  background-color: rgb(14, 23, 49);
+}
+.more_details {
+  color: rgb(14, 23, 49);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  width: 800px;
+  /* border: 1px solid rgb(240, 179, 48); */
+  margin: auto;
+  margin-top: -10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  animation: scale-up-center 1s ease forwards;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#place-oder {
+  padding: 0.5rem 1rem;
+  background-color: rgb(14, 23, 49);
+  color: white;
+  margin: -10px 80px;
+  border-radius: 5px;
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.more_details:hover {
+  box-shadow: 0px 0px 30px 30px rgba(230, 166, 48, 0.137);
+  transition: all 0.9s 0s ease;
+}
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(14, 23, 49);
+  margin-bottom: 5px;
+}
+.product-image {
+  /* width: 200px;
+    height: 200px; */
+  /* box-sizing: border-box; */
+  /* background-color: rgb(240, 179, 48); */
+  margin: auto;
+}
+.des {
+  overflow-y: scroll;
+  /* height:60%; */
+  padding: 10px 30px;
+  /* width: 100%; */
+  box-sizing: border-box;
+}
+/* .product-description {
+  width: 300px;
+  height: 100px;
+  background-color: rgb(240, 179, 48);
+  margin: auto;
+} */
+
+#product-price {
+  /* border: 1px solid rgb(240, 179, 48); */
+  padding: 0.5rem 1rem;
+  margin: 20px 100px;
+  border-radius: 5px;
+  background: rgb(14, 23, 49);
+  color: white;
+}
+/* Modify product page style of its a tag */
+.show-details_link a {
+  margin-top: 5px;
+}
+
+/* Modify Admin */
+#change-password a {
+  border: 1px solid rgb(240, 179, 48);
+  text-decoration: none;
+  color: rgb(240, 179, 48);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#change-password a:active {
+  padding: 0.4rem 0.9rem;
+}
+
+/* Media query of adminshop */
+@media screen and (max-width: 1210px) {
+  .product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap: 10px;
+        padding: 1rem 2rem;
+        background-color: rgb(14, 23, 49);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  }
+}
+@media screen and (max-width: 1034px) {
+  .product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* padding: 1rem 2rem;
+        background-color: rgb(14, 23, 49);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   */
+  }
+}
+@media screen and (max-width: 950px) {
+  .product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 653px) {
+  .product-grid {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+  }
+}
+@media screen and (max-width: 643px) {
+  .product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 406px) {
+  .grid {
+    background-color: rgb(240, 179, 48);
+    margin-left: -10px;
+  }
+}
+@media screen and (max-width: 384px) {
+  .grid {
+    background-color: rgb(240, 179, 48);
+    margin: 0 auto;
+    /* width: 200px; */
+  }
+}
+/* @media screen and (max-width:377px) {
+    .grid{
+        background-color: rgb(240, 179, 48);
+        margin: 0 auto;
+        max-width: 200px;
+    }
+} */
+
+/* Media query for product list of admin panel */
+@media screen and (max-width: 833px) {
+  .productlist button {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 441px) {
+  .adminlist button {
+    padding: 0.8rem 1.8rem;
+  }
+}
+@media screen and (max-width: 428px) {
+  .adminlist button {
+    margin-top: 10px;
+  }
+}
+
+/* Style of moblie navigation links */
+.micons a {
+  text-decoration: none;
+  color: rgb(240, 179, 48);
+}
+/* Media query for more details */
+@media screen and (max-width: 858px) {
+  .more_details {
+    margin: 10px auto;
+    grid-template-columns: 1fr 1fr;
+    width: 700px;
+  }
+}
+@media screen and (max-width: 686px) {
+  .more_details {
+    margin: 10px auto;
+    grid-template-columns: 1fr;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .more_details {
+    margin: 10px auto;
+    grid-template-columns: 1fr;
+    width: 310px;
+  }
+}
+.container-brand {
+  padding: 50px;
+}
+
+.all-brands {
+  /* width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto; */
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  padding-bottom: 30px;
+}
+/* .container-brands1200{
+    color: rgb(255, 255, 255);
+    display: none;
+} */
+@media screen and (max-width: 1200px) {
+  /* .container-brands1200{
+        color: rgb(255, 255, 255);
+        display: block;
+    } */
+  /* .all-brands1200{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    } */
+  .brand {
+    transform: scale(0.5);
+    margin: 0 -50px;
+  }
+}
+@media screen and (max-width: 608px) {
+  .all-brands {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .container-brands {
+    margin-left: 80px;
+  }
+}
+
+.brand {
+  /* background-color: rgb(240, 179, 48); */
+  width: 150px;
+  height: 80px;
+  /* margin-top: 40px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 30px;
+  /* animation: slide-bl 1s ease 0s 1 normal none; */
+  /* animation: slide-left 10s linear 0s 1 forwards; */
+}
+@keyframes slide-left {
+  0% {
+    transform: translate(1250px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+#titleofbrand {
+  text-align: center;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(14, 23, 49);
+  border: 1px solid rgb(14, 23, 49);
+  /* border-radius: 50%; */
+}
+
+.container-brands {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  color: white;
+  text-align: center;
+  margin: auto;
+  visibility: hidden;
+  /* animation: shutter-in-right 1s ease 0s 1 normal none; */
+}
+@keyframes shutter-in-right {
+  0% {
+    transform: rotateY(-100deg);
+    transform-origin: right;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0);
+    transform-origin: right;
+    opacity: 1;
+  }
+}
+.brands {
+  animation: scale-up-top 1s ease 1s 1 normal forwards;
+}
+@keyframes scale-up-top {
+  0% {
+    visibility: visible;
+    transform: scale(0.2);
+    transform-origin: 50% 0%;
+  }
+  100% {
+    visibility: visible;
+    transform: scale(1);
+    transform-origin: 50% 0%;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .container-brands {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 360px) {
+  .container-brands {
+    transform: scale(0.8);
+  }
+}
+
+/* All products button */
+.allproducts {
+  background-color: rgb(240, 179, 48);
+  color: rgb(14, 23, 49);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 0.5rem 1rem;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  cursor: pointer;
+  margin-left: 5;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.allproducts:active {
+  box-shadow: 0px 0px 30px 30px rgba(230, 166, 48, 0.137);
+  /* font-size: 0.98rem; */
+}
+#searchBox3 {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+/* More details page */
+.moredetails-container {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  width: 80vw;
+  background-color: white;
+  margin: auto;
+  gap: 10px;
+  box-sizing: border-box;
+}
+.product-image img {
+  width: 100%;
+  height: auto;
+}
+.product-name {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 24px;
+}
+.product-description {
+  padding: 10px;
+  overflow-y: scroll;
+  width: 90%;
+  height: 70%;
+  box-sizing: border-box;
+}
+.product-price {
+  padding: 10px 20px;
+  background-color: rgb(14, 23, 49);
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+/* .sides{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  animation: scale-up-center 1s ease forwards;
+  justify-content:space-evenly;
+  margin:auto;
+}
+@media screen and (max-width:816px) {
+  .sides{
+    grid-template-columns: 0.5fr;
+  }
+  
+  @media screen and (max-width:476px) {
+  .sides{
+    grid-template-columns: 0.25fr;
+  }
+  #productimg{
+    transform:scale(0.7);
+  }
+  
+}
+}
+.right-side{
+  display:grid;
+  grid-template-columns:1fr;
+  background-color: white;
+  width:80%;
+  padding:20px;
+}
+#productimg{
+  width:450px;
+  height:auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#p-name{
+  text-align: center;
+  color:white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+}
+.des{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:rgb(14, 23, 49);
+  font-size: 1.2rem;
+  width:100%;
+  height:90px;
+  overflow-y: scroll;
+} */
+
+/* Loader animation */
+
+/* .mobile-icons {
+  display: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  color: rgb(240, 179, 48);
+}
+.m-icons a {
+  color: rgb(240, 179, 48);
+  text-decoration: none;
+}
+@media screen and (max-width: 299px) {
+  .mobile-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    color: rgb(240, 179, 48);
+  }
+} */
